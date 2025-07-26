@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Özür Dilerim</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Başlatma ekranı -->
+  <div id="startScreen" class="overlay">
+    <h1>Hazırsan bir şey dinletmek istiyorum... 🎵</h1>
+    <button id="startBtn">Başlat</button>
+  </div>
+
+  <!-- Ana içerik -->
+  <div id="mainContent" class="hidden">
+
+    <!-- Slideshow arka plan -->
+    <div id="slideshow"></div>
+
+    <!-- Soru ve butonlar -->
+    <div class="centerContent">
+      <h1>Kırdığım güzel kalbi düzeltmek istiyorum İzin verir misin?💖</h1>
+      <div class="buttons">
+        <button id="yesBtn">Evet</button>
+        <button id="noBtn">Hayır</button>
+      </div>
+      <p id="messageArea" class="message"></p>
+    </div>
+
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/sarki.mp3" type="audio/mp3" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
