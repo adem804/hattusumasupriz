@@ -38,10 +38,21 @@ body, html {
 #slideshow {
   position: fixed;
   top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#slideshow .slide {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
   background-size: cover;
   background-position: center;
-  z-index: 1;
-  transition: background-image 1.5s ease-in-out;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+#slideshow .slide.active {
+  opacity: 1;
 }
 
 /* Ortadaki içerik */
